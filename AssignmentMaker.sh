@@ -10,7 +10,7 @@ then
 cd $1 && mkdir $2 && cd $2
 for (( j=1; j<=$3; j++ ))
 do
-touch "Question$j.sh" && chmod +x "Question$j.sh"
+touch "Question$j.sh" && chmod +x "Question$j.sh" && echo "#!/bin/bash" >> "Question$j.sh"
 done
 #handling the unwanted error !
 else
