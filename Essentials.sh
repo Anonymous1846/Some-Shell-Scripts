@@ -10,8 +10,8 @@ then
 fi
 
 #update packages and upgrade them !
-apt install update 
-apt install upgrade -y
+apt update 
+apt upgrade -y
 
 #text editors !
 echo "Installing Text Editors !"
