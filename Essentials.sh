@@ -26,6 +26,11 @@ apt install gcc-multilib
 apt install python-pip	#python 2
 apt install python3-pip	#python 3
 
+#install golang
+wget https://golang.org/dl/go1.17.1.linux-amd64.tar.gz -P ~/Downloads/
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.1.linux-amd64.tar.gz
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
+
 #misc tools
 apt install neofetch
 
